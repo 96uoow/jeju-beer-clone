@@ -1,0 +1,43 @@
+@font-face {
+  font-family: gotham A;
+  src: url(./font/Gotham-Bold.woff);
+}
+@font-face {
+  font-family: gotham B;
+  src: url(./font/Gotham-Book.woff);
+}
+body{
+  font-family:'gotham A', 'gotham B', 'Spoqa Han Sans Neo';
+  overflow-x:hidden;
+}
+a{
+  display:block;
+  text-decoration: none;
+}
+.inner{
+  width:1200px;
+  margin:auto;
+  position:relative;
+}
+
+.back-to-position{
+  opacity:0;
+  transition: 1s;
+}
+.back-to-position.to-up{
+  transform: translateY(100px);
+}
+.show .back-to-position{
+  opacity:1;
+  transform: translateY(0);
+}
+
+.show .back-to-position.delay-0{
+  transition-delay: 0s;
+}
+.show .back-to-position.delay-1{
+  transition-delay: .3s;
+}
+.show .back-to-position.delay-2{
+  transition-delay: .6s;
+}

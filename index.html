@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/mobile.css">
+  <link rel="stylesheet" media="all and (min-width:600px)" href="./css/pc.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+  <!-- SWIPER -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- LODASH -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js" integrity="sha512-WFeBxQtM/n6U8/Nd0Hz/Hq7n75NImbzM7Kc0y/4kE0kHnH1Be+nzm32RwbGoDsW1D9fjjPvI8LIWxLrZhxew/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="./js/main.js"></script>
+  <title>제주맥주</title>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <!-- 모바일 메뉴 -->
+    <div class="mb">
+      <a href="/" class="logo">
+        <img src="./images/mobile-logo.png" alt="jejubeer_logo"/>
+      </a>
+      <div class="mb-menu-bar">
+        <div class="material-icons bar">
+          menu
+        </div>
+        <div class="material-icons close">
+          close
+        </div>
+      </div>
+    </div>
+    <div class="menu-modal">
+      <div class="util">
+        <ul>
+          <li class="login"><a href="javascript:void(0)">LOGIN</a></li>
+          <li class="join"><a href="javascript:void(0)">JOIN</a></li>
+          <li class="recruit"><a href="javascript:void(0)">RECRUIT</a></li>
+          <li class="book"><a href="javascript:void(0)">양조장 예약</a></li>
+        </ul>
+      </div>
+      <ul class="mb-sub-menu">
+        <li><a href="javascript:void(0)">SHOP</a>
+          <img src="./images/menu-icon-cart.png" alt="cart">
+        </li>
+        <li><a href="javascript:void(0)">BARREL SERIES</a>
+          <span>with Piaf</span>
+        </li>
+        <li><a href="javascript:void(0)">SUPPORTERS</a>
+          <span>위트있는 제철단</span>
+        </li>
+        <li><a href="javascript:void(0)">JEJU BEER LIFE</a>
+          <span>제주맥주 한달살기</span>
+        </li>
+        <li class="tour"><a href="javascript:void(0)">BREWERY</a>
+          <span>양조장투어</span>
+        </li>
+        <!-- 작은 메뉴 -->
+        <li><a href="javascript:void(0)" class="light">about us</a></li>
+        <li><a href="javascript:void(0)" class="light">our beers</a></li>
+        <li><a href="javascript:void(0)" class="light">news</a></li>
+      </ul>
+      <div class="site-link">
+        <div class="youtube">
+          <img src="./images/youtube.png" alt="youtube" class="youtube"/>
+        </div>
+        <div class="icons">
+          <img src="./images/facebook.png" alt="facebook" class="facebook"/>
+          <img src="./images/instagram.png" alt="instagram" class="instagram"/>
+          <img src="./images/naver.png" alt="naver" class="naver"/>
+        </div>
+      </div>
+      <div class="etc">
+        <span><a href="javascript:void(0)">CONTACT</a></span>
+        <span><a href="javascript:void(0)">IR</a></span>
+      </div>
+    </div>
+
+    <!-- PC 메뉴 -->
+    <div class="pc">
+      <div class="inner">
+        <a href="/" class="pc-logo">
+          <img src="./images/pc-ci.png" alt="제주맥주 로고">
+        </a>
+        <ul class="pc-gnb">
+          <li><a href="javascript:void(0)">BARREL SERIES</a></li>
+          <li><a href="javascript:void(0)">SUPPORTERS</a></li>
+          <li><a href="javascript:void(0)">JEJU BEER LIFE</a></li>
+          <li><a href="javascript:void(0)">SHOP</a></li>
+          <li><a href="javascript:void(0)">BREWERY</a></li>
+        </ul>
+        <div class="sub-menu">
+          <span>LOGIN</span>
+          <span>JOIN</span>
+          <span>CART</span>
+          <span>RECRUIT</span>
+        </div>
+        <div class="site">
+          <div class="shop"><a href="javascript:void(0)">논알콜 제주누보 구매</a></div>
+          <div class="book"><a href="javascript:void(0)">양조장 예약</a></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- main-visual -->
+  <div class="main-visual">
+    <video src="https://jbimweb.s3.ap-northeast-2.amazonaws.com/video/jb_jejulager_web_6.mp4" autoplay loop muted></video>
+  </div>
+
+  <!-- PRODUCT -->
+  <section class="product scroll-spy">
+    <img src="./images/prod1-name.png" alt="제주 라거" class="name back-to-position to-up delay-0">
+    <img src="./images/prod1.png" alt="제주 라거" class="prod back-to-position to-up delay-1">
+    <div class="prod-info back-to-position to-up delay-2">
+      <span>제주라거</span>는<br class="enter">
+      맥주의 기본 4대 원료를 사용하는<br>
+      독일 맥주 순수령 원칙을 지킨<br>
+      제주 하얀 파도의 시원함과<br>
+      부드러움을 닮은 올 몰트 라거입니다.<br>
+    </div>
+  </section>
+  
+  <section class="product scroll-spy">
+    <img src="./images/prod2-name.png" alt="제주 라거" class="name back-to-position to-up delay-0">
+    <img src="./images/prod2.png" alt="제주 라거" class="prod back-to-position to-up delay-1">
+    <div class="prod-info back-to-position to-up delay-2">
+      <span>제주 위트 에일</span>은<br class="enter">
+      제주 감귤 껍질의 상큼함과 섬세한 꽃 향,<br>
+      입 안 가득 부드럽게 퍼지는 시트러스향이 만나<br>
+      산뜻한 끝 맛을 선사하는 밀맥주입니다.<br>
+    </div>
+  </section>
+
+  <section class="product scroll-spy">
+    <img src="./images/prod3-name.png" alt="제주 라거" class="name back-to-position to-up delay-0">
+    <img src="./images/prod3.png" alt="제주 라거" class="prod back-to-position to-up delay-1">
+    <div class="prod-info back-to-position to-up delay-2">
+      <span>제주 펠롱 에일</span>은 반딧불이 반짝이는 곶자왈에서<br>
+      영감을 받아 탄생하였습니다.<br class="enter">
+      다양하고 개성있는 홉들을 블렌딩하여<br>
+      시트러스 아로마와 진한 맥아의 맛이 어우러져<br>
+      풍부한 풍미를 선사하는 페일에일 맥주입니다.<br>
+    </div>
+  </section>
+
+  <section class="product scroll-spy">
+    <img src="./images/prod4-name.png" alt="제주 라거" class="name back-to-position to-up delay-0">
+    <img src="./images/prod4.png" alt="제주 라거" class="prod back-to-position to-up delay-1">
+    <div class="prod-info back-to-position to-up delay-2">
+      <span>제주 거멍 에일</span>은<br class="enter">
+      제주의 여름밤을 떠올리게 하는 짙은 빛깔 속에서,<br>
+      제주 흑보리와 초콜릿 밀로 완성된 은은한 달큰함과<br>
+      경쾌한 풍미를 자아내는 흑맥주입니다.<br>
+    </div>
+  </section>
+
+  <!-- SLIDER -->
+  <section class="mart">
+    <div class="inner">
+      <div class="text">
+        제주맥주는<br>
+        <span>전국 편의점 및 대형마트</span>에서 만나보실 수 있습니다.
+      </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://cdn.imweb.me/thumbnail/20210802/40864c3307c67.jpg" alt="롯데백화점">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://cdn.imweb.me/thumbnail/20210802/187f0b5636736.jpg" alt="세븐일레븐">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://cdn.imweb.me/thumbnail/20210802/6799af9b876cd.jpg" alt="홈플러스">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://cdn.imweb.me/thumbnail/20210802/7a21ee2be7353.jpg" alt="이마트트레이더스">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://cdn.imweb.me/thumbnail/20210802/8573fd671b814.jpg" alt="빅 마켓">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://cdn.imweb.me/thumbnail/20210802/b20f4b0daca42.jpg" alt="갤러리아">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://cdn.imweb.me/thumbnail/20210802/636fefe3f41d8.jpg" alt="CU">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://cdn.imweb.me/thumbnail/20210802/7c9e1325bc8c3.jpg" alt="이마트24">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://cdn.imweb.me/thumbnail/20210802/914240682297d.jpg" alt="이마트">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://cdn.imweb.me/thumbnail/20210802/34ecb3a2173d6.jpg" alt="롯데마트">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://cdn.imweb.me/thumbnail/20210802/7eb37ff38f03c.jpg" alt="코스트코">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://cdn.imweb.me/thumbnail/20210802/7434b6388c3f7.jpg" alt="신세계">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://cdn.imweb.me/thumbnail/20210802/a0c6a623cf42e.jpg" alt="GS25">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <ul class="foot-menu">
+      <li><a href="javascript:void(0)" class="pc-foot">ABOUT US</a></li>
+      <li><a href="javascript:void(0)" class="pc-foot">OUR BEERS</a></li>
+      <li><a href="javascript:void(0)" class="pc-foot">NEWS</a></li>
+      <li><a href="javascript:void(0)" class="pc-foot">CONTACT</a></li>
+      <li><a href="javascript:void(0)" class="pc-foot">IR</a></li>
+      <li><a href="javascript:void(0)" class="mb-foot">이용약관</a></li>
+      <li><a href="javascript:void(0)" class="mb-foot bd">개인정보 처리방침</a></li>
+      <li><a href="javascript:void(0)" class="mb-foot">영상정보 처리방침</a></li>
+    </ul>
+    <div class="info">
+      <p class="foot-info">
+      제주맥주 주식회사 대표 문혁기<br>
+      본사) 제주특별자치도 제주시 한림읍 금능농공길 62-11<br class="mb-line">
+      서울사무실) 서울특별시 중구 동호로 228 동호 38빌딩 6층<br>
+      호스팅 제공자 (주)아임웹<br class="mb-line">
+      사업자등록번호 616-86-27415<br class="mb-line">
+      통신판매업신고번호 제 2020-제주한림-0101호<br>
+      고객센터 02-2235-5559, jejubeer@jejubeer.co.kr<br>
+      <br>
+      </p>
+      <p class="copyright">
+      COPYRIGHT 2021&copy; <span class="this-year"></span> JEJU BEER COMPANY
+      </p>
+    </div>
+    <div class="icons">
+      <img src="./images/youtube.png" alt="youtube" class="icon"/>
+      <img src="./images/facebook.png" alt="facebook" class="icon"/>
+      <img src="./images/instagram.png" alt="instagram" class="icon"/>
+      <img src="./images/naver.png" alt="naver" class="icon"/>
+    </div>
+  </footer>
+
+  <!-- BANNER BUTTON -->
+  <div class="banner">
+    <a href="javascript:void(0)">
+      <img src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/2616c012b78f3.png" alt="channel" class="btn">
+    </a>
+    <a href="javascript:void(0)">
+      <img src="https://jbimweb.s3.ap-northeast-2.amazonaws.com/resource/images/button-share.png" alt="share" class="btn">
+    </a>
+    <a href="javascript:void(0)">
+      <img src="https://jbimweb.s3.ap-northeast-2.amazonaws.com/resource/images/button-top.png" alt="gotop" class="btn gotop">
+    </a>
+  </div>
+
+    <!-- SHARE -->
+    <div class="modal-share">
+      <span>공유하기</span>
+      <div class="circles">
+        <div class="circle"></div>
+        <div class="circle share"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
+</body>
+</html>
